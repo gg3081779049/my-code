@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #panel {
+            width: 1200px;
+            height: 700px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+        }
+
+        #text {
+            text-align: center;
+            margin-top: 12px;
+            letter-spacing: 5px;
+            color: rgb(255, 215, 0);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #text span {
+            transition: 0.4s;
+        }
+
+        .before {
+            color: rgb(255, 215, 0);
+            text-shadow: none;
+        }
+
+        .after {
+            color: rgb(0, 168, 0);
+            text-shadow: 0 0 6px black;
+        }
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            cursor: pointer;
+            overflow: clip;
+            animation: o .4s;
+        }
+
+        @keyframes circle {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #o {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            cursor: pointer;
+            filter: hue-rotate(-50deg) saturate(5);
+            animation-name: o;
+            animation-duration: 2s;
+        }
+
+        @keyframes o {
+            0% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="text">╰⊱⋋<span id="tip"></span>⋌⊰╯</h1>
+    <div id="panel">
+        <img src="img/circle.png" id="o">
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

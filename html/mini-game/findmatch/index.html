@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(white, gray);
+        }
+
+        #panel {
+            padding: 10px;
+            border-radius: 6px;
+            border: 6px solid rgb(100, 20, 20);
+            box-shadow: 0 0 12px black;
+            background: rgb(180, 80, 80);
+            display: grid;
+            gap: 5px;
+            justify-items: center;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #panel .card {
+            width: 60px;
+            height: 75px;
+        }
+
+        #countdown {
+            text-shadow: 0 0 10px gray;
+            font-family: "华文彩云", serif;
+            color: brown;
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            transform: translateX(-50%);
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="countdown"></h1>
+    <div id="panel"></div>
+</body>
+<script src="index.js"></script>
+
+</html>

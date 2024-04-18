@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(200deg, #a8edea, #fed6e3);
+        }
+
+        #panel {
+            width: 360px;
+            height: 360px;
+            border: 3px solid black;
+            box-shadow: 0 0 13px black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+        }
+
+        #panel .box {
+            background-image: url("img/belle.jpg");
+            border: 3px solid black;
+            border-radius: 50%;
+            position: absolute;
+            transition: 0.6s;
+        }
+
+        #help {
+            width: 22px;
+            height: 22px;
+            color: transparent;
+            border-radius: 50%;
+            text-align: center;
+            user-select: none;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: 0.5s;
+        }
+
+        #help:hover {
+            background: gainsboro;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="panel"></div>
+    <div id="help">?</div>
+</body>
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.min.js"></script>
+
+</html>
